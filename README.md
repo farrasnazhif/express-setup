@@ -16,6 +16,8 @@ Start the server.
 npm run server
 ```
 
+Rename `.env.example` to `.env` or `env.local`
+
 ## Guide to Setting Up a Basic Express Server with TypeScript
 
 This guide will help you create a simple Express.js server using TypeScript, starting from project setup all the way to running it in your browser.
