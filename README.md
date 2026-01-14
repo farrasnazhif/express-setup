@@ -11,15 +11,7 @@ npm (or yarn / pnpm)
 
 ### 1. Project Initialization
 
-Create a new folder for your server project, then initialize it so Node.js can manage your dependencies.
-
-```bash
-mkdir server
-```
-
-```bash
-cd server
-```
+Initialize it so Node.js can manage your dependencies.
 
 ```bash
 npm init -y
