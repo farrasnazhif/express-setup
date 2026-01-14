@@ -1,3 +1,21 @@
+## Guide to Clone the Project
+
+```bash
+git clone https://github.com/farrasnazhif/express-setup.git
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the server.
+
+```bash
+npm run server
+```
+
 ## Guide to Setting Up a Basic Express Server with TypeScript
 
 This guide will help you create a simple Express.js server using TypeScript, starting from project setup all the way to running it in your browser.
