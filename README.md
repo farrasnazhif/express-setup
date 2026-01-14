@@ -11,7 +11,9 @@ npm (or yarn / pnpm)
 
 ### 1. Project Initialization
 
-Initialize it so Node.js can manage your dependencies.
+Initialize the project so Node.js can manage your dependencies.
+
+This will create a `package.json` file that stores your project info, scripts, and dependencies.
 
 ```bash
 npm init -y
