@@ -16,7 +16,7 @@ Start the server.
 npm run server
 ```
 
-Rename `.env.example` to `.env` or `env.local`
+Rename `.env.example` to `.env` or `env.local` and change the key with yours.
 
 ## Guide to Setting Up a Basic Express Server with TypeScript
 
