@@ -165,8 +165,60 @@ Start your server using the new script:
 npm run server
 ```
 
-You should see the message: Server is running at http://localhost:3000
+You should see the message: Server is running at http://localhost:5173
 
-Open your web browser and navigate to http://localhost:3000 to see the
+Open your web browser and navigate to http://localhost:5173 to see the
 
 "Server is Live!" message.
+
+## Setup MongoDB
+
+### 1. Initialize Code
+
+```bash
+npm install mongoose
+```
+
+Create `configs/db.ts` and add this following code:
+
+```typescript
+import mongoose from "mongoose";
+
+const connectDB = async () => {
+  try {
+    mongoose.connection.on("connected", () => console.log("MongoDB connected"));
+    await mongoose.connect(process.env.MONGODB_URL as string);
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+};
+
+export default connectDB;
+```
+
+Add this following code in `server.ts`.
+
+```typescript
+import "dotenv/config";
+import connectDB from "./configs/db.js";
+
+await connectDB();
+```
+
+### 2. Add Key
+
+Inside you `.env`, add your mongodb key:
+
+```bash
+MONGODB_URL="your-mongodb-key"
+```
+
+### 3. Run the Server
+
+Start your server using this script:
+
+```bash
+npm run server
+```
+
+You should see the message: MongoDB connected
